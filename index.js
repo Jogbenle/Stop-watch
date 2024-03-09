@@ -8,7 +8,7 @@ function timer(){
 }
 
 function startClock(){
-    interval = setInterval(, 1000)
+    interval = setInterval(timer, 1000)
 }
 
 function stopClock(){}
