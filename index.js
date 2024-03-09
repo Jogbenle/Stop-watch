@@ -3,6 +3,10 @@ let interval = null;
 const time = document.getElementById("time")
 
 
+function timer(){
+    secondsElapsed++;
+}
+
 function startClock(){
     interval = setInterval(, 1000)
 }
