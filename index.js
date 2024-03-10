@@ -4,10 +4,10 @@ const time = document.getElementById("time")
 
 function setTime(){
     const minutes = Math.floor(secondsElapsed/60)
-    time.innerHTML = secondsElapsed;
+    const seconds = secondsElapsed % 60
+    time.innerHTML = `${minutes}:${seconds}`;
+
 }
-
-
 function timer(){
     secondsElapsed++;
     setTime()
