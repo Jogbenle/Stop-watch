@@ -22,6 +22,12 @@ function startClock(){
     interval = setInterval(timer, 1000)
 }
 
-function stopClock(){}
+function stopClock(){
+    clearInterval(interval)
+}
 
-function resetClock(){}
+function resetClock(){
+    stopClock()
+    secondsElapsed = 0;
+    setTime()
+}
